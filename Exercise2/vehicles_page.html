@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>2019 Escalade</title>
+    <link rel="shortcut icon" type="image/jpg" href="cadillacIcon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+
+</head>
+<body>
+
+    <div class="title" style="text-align: center">
+
+        <h1>Vehicle Page</h1>
+    
+    </div>
+    <!-- Container for slideshow -->
+    <div class="slideshow-container">
+        <!-- First slide, including image of vehicle and awards -->
+        <div class="slide fade">
+
+            <img src="exterior.png">
+
+            <img id="bestBuy" src="bestBuy.png" style="height:100px; width:100px" >
+
+            <img id="bestResale" src="bestResale.png" style="height:100px; width:100px" >
+            <!-- Vehicle description in box -->
+            <div class="titleText">2019 ESCALADE SUV</div>
+           
+            <div class="text">From: $75,195<br>Limited-time offer of 0% APR for 36 months through the end of the year.</div>
+
+            <div class="footerText">2019 Escalade Sport Edition shown. Available in Black Raven, Satin Steel and Red Passion.</div>
+
+        </div>
+        <!-- Second slide, including image of vehicle -->
+        <div class="slide fade">
+
+            <img src="FrontView.png">
+            <!-- Vehicle description in box --> 
+            <div class="bodyText">
+          
+                <h3>EXPERIENCE A SUPERIOR RIDE</h3>
+                <!-- Vehicle description list  -->
+                <ul>
+                    <li>Class - Exclusive Magnetic Ride Control</li>
+                    <li>Crystal-Clear Vision LED headlamps</li>
+                    <li>Bold signature grille</li>
+                </ul>
+
+            </div>
+            <!-- Vehicle description in box -->
+            <div class="bodyText2">
+               
+                <h3>BOLD POWER</h3>
+                <!-- Vehicle description list  -->
+                <ul>
+                    <li>6.2L V8 with 420 hp and 460 lb-ft torque</li>
+                    <li>10 - speed automatic transmission</li>
+                </ul>
+
+            </div>
+
+            <div class="text">The SUV with sophistication, strength and <br> style, refined from every angle.</div>
+
+        </div>
+        <!-- Third slide, including image of vehicle -->
+        <div class="slide fade">
+
+            <img src="interior.png">
+            <!-- Vehicle description in box -->
+            <div class="interiorText">
+                
+                <h3>MADE FOR YOUR COMFORT</h3>
+                <!-- Vehicle description list  -->
+                <ul>
+                    <li>Bose - 16 speaker audio system</li>
+                    <li>Wireless Charging</li>
+                    <li>4G LTE Wi-Fi hotspot capable</li>
+                    <li>Rear seat entertainment system</li>
+                </ul>
+
+            </div>
+
+            <div class="text">Stunning craftsmanship with equally stunning comfort, <br> including heated and cooled front seats and heated rear outboard seats.</div>
+
+
+            <div class="footerText">Escalade Platinum trim shown. Interior color availability may vary based on trim level and package selected.</div>
+
+        </div>
+        <!-- Fourth slide, including image of vehicle -->
+        <div class="slide fade">
+
+            <img src="wheels.png">
+            <!-- Vehicle description in box -->
+            <div class="wheelText">
+                 
+                <h3>MAKE A STATEMENT</h3>
+                 <!-- Vehicle description list  -->
+                <ul>
+                    <li>Wheels are castformed to minimize weight,<br>while gaining strength and second looks.</li>
+                </ul>
+    
+            </div>
+
+            <div class="text">22-inch polished alloy wheels</div>
+
+        </div>
+        <!-- Fifth slide, including image of vehicle -->
+        <div class="slide fade">
+
+            <img src="escalade.png">
+            <!-- Vehicle description in a box  -->
+            <div class="featureText">
+            
+                <h3>AMBITION ON A GRAND SCALE</h3>
+                <!-- Vehicle description list  -->
+                <ul>
+                    <li>Cadillac user experience with navigation</li>
+                    <li>Hands-Free power liftgate</li>
+                </ul>
+
+            </div>
+
+            <div class="text">An Iconic Design and Innovative Technology.<br>The 2019 Cadillac Escalade</div>
+
+        </div>
+        <!-- Scroll dot on lower slide to show current slide or change slides  -->
+        <div class="dotsList">
+
+            <span class="dot" onclick="currentSlide(1) "></span>
+            <span class="dot" onclick="currentSlide(2) "></span>
+            <span class="dot" onclick="currentSlide(3) "></span>
+            <span class="dot" onclick="currentSlide(4) "></span>
+            <span class="dot" onclick="currentSlide(5) "></span>
+    
+        </div>
+        <!-- Scroll arrows on left and right side to change slides prev or next -->
+        <a class="prev" onclick="nextSlides(-1)"> &#10094;</a>
+        <a class="next" onclick="nextSlides(1)"> &#10095;</a>
+
+    </div>
+
+    <script>
+
+        //======================================================
+        // Functions to change slides with arrows or dots
+        //======================================================
+
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function nextSlides(n) {
+
+            showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+
+            var i;
+            var slides = document.getElementsByClassName("slide");
+            var dots = document.getElementsByClassName("dot");
+
+            if (n > slides.length) {
+
+                slideIndex = 1;
+            }
+            if (n < 1) {
+
+                slideIndex = slides.length;
+            }
+            for ( i = 0; i < slides.length; i++) {
+
+                slides[i].style.display = "none";
+            }
+            for ( i = 0; i < dots.length; i++) {
+
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+
+        }
+
+    </script>
+    
+</body>
+</html>

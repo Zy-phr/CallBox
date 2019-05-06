@@ -1,0 +1,426 @@
+/*
+======================================================
+Background image
+======================================================
+*/
+
+.background-image {
+    background: url(background.jpg) no-repeat center center fixed;
+    background-size: 100%;
+    padding-bottom: 605px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/*
+======================================================
+Header Box / Navbar
+======================================================
+*/
+
+header {
+    width: 100%;
+    margin: 0 auto;  
+    border-bottom: 2px solid #1a2735;
+    margin-bottom: 20px;
+    background-color: #f0f8ff;
+    position: fixed;
+    top: 0;
+    left:0;
+}
+
+#icon {
+    margin-left: 150px;
+}
+
+.navbar {
+    overflow: hidden;
+    margin-top: 40px;
+    margin-right: 150px;
+    float: right;
+}
+
+.navbar a {
+    float: left;
+    color: #050505;
+    text-align: center;
+    text-decoration: none;
+    padding: 0 15px;
+    font-size: 18px;  
+}
+
+a.home {
+    border-right: 2px solid #1a2735;   
+}
+
+a.about {
+    border-right: 2px solid #1a2735;
+    border-left: 2px solid #1a2735;
+}
+
+a.inventory {
+    margin-left: -5px;
+    margin-right: -10px;
+}
+
+a.contact {
+    margin-left: -5px;
+}
+
+.navbar a:hover {
+    color: #1a2735;
+}
+
+/*
+======================================================
+Dropdown menu
+======================================================
+*/
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 18px;  
+    border: none;
+    outline: none;
+    background-color: inherit;
+    font-family: inherit;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+    color: rgba(116, 114, 114, 0.822);
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9e8;
+    min-width: 120px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 12px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #1a2735e0;
+}
+
+/*
+======================================================
+Staff_Page
+======================================================
+*/
+
+.container {
+    width: 960px;
+    margin: 0 auto;
+    margin-top: 130px;
+    margin-bottom: 60px;
+}
+
+/*
+======================================================
+Adjusted placement for all department titles
+======================================================
+*/
+
+h2 {
+    padding-left: 40px;
+    margin-bottom: 0px;
+    margin-top: -28px;
+}
+
+h1, h2, h3, h4 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.closeButton {
+    font-size: 30px;
+    border: none;
+    outline: none;
+    margin-left: 15px;
+    background-color: #f0f8ffec;
+    position: inherit;
+    margin-top: 0px;
+}
+
+/*
+======================================================
+Departemnt row seperation in rows 
+======================================================
+*/
+
+.row {
+    background-color: #f0f8ffec;
+    border: 1px solid #1a2735;
+    padding-bottom: 10px;
+    border-radius: 10px;
+}
+
+/*
+======================================================
+Placement for all staff profile pic
+======================================================
+*/
+
+.col-lg-3 {
+   padding-top: 10px;
+   padding-left: 100px;
+}
+
+/*
+======================================================
+Placement for all staffs personal info
+======================================================
+*/
+
+.col-lg-9 {
+    float: left;
+    padding-left: 270px;
+    margin-top: -150px;
+}
+
+/*
+======================================================
+Positioning of staff members on the right side
+======================================================
+*/
+
+.emp2, .emp4, .emp6 {
+    float: right;
+    padding-right: 100px;
+    margin-top: -165px;
+}
+
+/*
+======================================================
+Details for images for all the staffs profile  pic
+======================================================
+*/
+
+img {
+    height: 100px;
+    width: 100px;
+}
+
+#profile {
+    height: 150px;
+    width: 150px;
+    border-radius: 75px;
+    border: 1px solid rgba(0, 0, 0, 0.507);
+}
+
+#profile:hover {
+    transform: scale(1.1);
+    border: 2px solid rgba(0, 0, 0, 0.507);
+}
+
+/*
+======================================================
+Footer
+======================================================
+*/
+
+footer {
+    flex-shrink: 0;
+    padding: 0;
+    border-top: 2px solid #1a2735;
+    background-color: #f0f8ff;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+footer div {
+    margin: 0;
+    color: #050505;
+    font-size: 12px;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/*
+=======================================================
+Media Queries for Desktop Styles
+=======================================================
+*/
+
+@media only screen and (min-width: 961px) {
+   
+}
+
+/*
+=======================================================
+Media Queries for Tablet Styles
+=======================================================
+*/
+  
+@media only screen and (min-width: 415px) and (max-width: 960px) {
+ 
+    .container {
+        width: 75%;
+        margin-top: 170px;
+    }
+
+    .navbar {
+        overflow: hidden;
+        margin-right: 150px;
+        float: right;
+        margin-top: 0px;
+        margin-bottom: 20px;
+    }
+
+    #icon {
+        margin-left: 320px;
+    }
+
+    #profile {
+        height: 125px;
+        width: 125px;
+    }
+
+    h2 {
+        padding-left: 45px;
+        margin-bottom: 0px;
+    }
+
+    .col-lg-3 {
+        padding-top: 10px;
+        padding-left: 20px;
+    }
+
+    .col-lg-9 {
+        float: left;
+        padding-left: 155px;
+        margin-top: -130px;
+    }
+
+    .emp2, .emp4, .emp6 {
+        float: right;
+        padding-right: 30px;
+        margin-top: -138px;
+    }
+
+    .emp7 {
+        margin-top: 20px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    h4 {
+        font-size: 14px;
+    }
+
+    .background-image {
+        padding-bottom: 300px;
+    }
+
+}
+
+/*
+=======================================================
+Media Queries for Mobile Styles
+=======================================================
+*/
+
+@media only screen and (max-width: 414px) {
+
+    .container {
+        width: 100%;
+        margin-top: 160px;
+    }
+
+    .navbar {
+        overflow: hidden;
+        margin-right: 10px;
+        float: right;
+        margin-top: 0px;
+        margin-bottom: 10px;
+    }
+
+    .navbar a {
+        font-size: 12px; 
+    }
+
+    .dropdown .dropbtn {
+        font-size: 15px; 
+    }
+    
+    #icon {
+        margin-left: 130px;
+    }
+
+    h2 {
+        padding-left: 40px;
+        margin-bottom: 0px;
+    }
+
+    .row {
+        padding-bottom: 10px;
+        border-radius: 10px;
+    }
+
+    #part {
+        padding-bottom: 20px;
+    }
+
+    #fin {
+        padding-bottom: 20px;
+    }
+
+    .col-lg-3 {
+        padding-top: 10px;
+        padding-left: 20px;
+    }
+
+    .col-lg-9 {
+        float: left;
+        padding-left: 200px;
+        margin-top: -150px;
+    }
+
+    .emp2, .emp4, .emp6 {
+        float: none;
+        padding-right: 25px;
+        margin-top: 0px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    h4 {
+        font-size: 16px;
+    }
+
+    .dropdown-content a {
+        font-size: 10px;
+        padding: 5px 10px;
+    }
+
+    .dropdown-content {
+        min-width: 100px;
+    }
+    
+}
+  

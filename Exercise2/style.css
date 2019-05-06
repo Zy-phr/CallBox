@@ -1,0 +1,239 @@
+/*
+======================================================
+Style CSS for 940px by 385px slide
+======================================================
+*/
+.slideshow-container {
+    width: 940px;
+    height: 385px;
+    margin: auto;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+    width: 940px;
+    height: 385px;
+}
+
+/*
+======================================================
+Prev/next tabs style
+======================================================
+*/
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 43%;
+    width: auto;
+    padding: 15px;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px ;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.712);
+}
+
+/*
+======================================================
+Text on bottom of slide above dots
+======================================================
+*/
+
+.text {
+    color: white;
+    font-size: 18px;
+    padding: 5px 0px;
+    position: absolute;
+    bottom: 35px;
+    width: 100%;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.479);
+}
+
+/*
+======================================================
+Dots style 
+======================================================
+*/
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: rgba(255, 254, 254, 0.568);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    transform: scale(1.1);
+    background-color: rgba(0, 0, 0, 0.479);
+    border: 1px solid rgba(255, 254, 254, 0.568);
+
+}
+
+.dotsList {
+    margin-top: -38px;
+    text-align: center;
+    width: 100%;
+
+}
+
+/*
+======================================================
+Images for awards on first slide 
+======================================================
+*/
+
+#bestBuy {
+    position: absolute;
+    bottom: 75px;
+    left: 760px;
+}
+
+#bestResale {
+    position: absolute;
+    bottom: 75px;
+    left: 840px;
+}
+
+/*
+======================================================
+Text for title (2019 Escalade)
+======================================================
+*/
+
+.titleText {
+    color: rgb(14, 13, 13);
+    font-size: 30px;
+    padding: 5px 10px;
+    position: absolute;
+    bottom: 330px;
+    left: 10px;
+    text-align: center;
+    background: rgba(255, 254, 254, 0.747);
+    border-radius: 3px;
+}
+
+/*
+======================================================
+Small print on lower left of page in the footer
+======================================================
+*/
+
+.footerText {
+    color: white;
+    position: absolute;
+    bottom: 2px;
+    font-size: 10px;
+    padding-left: 5px;
+}
+
+/*
+======================================================
+Text description and postions for slide 2
+======================================================
+*/
+
+.bodyText {
+    color: rgb(14, 13, 13);
+    padding: 0px 10px;
+    position: absolute;
+    bottom: 250px;
+    left: 610px;
+    background: rgba(255, 254, 254, 0.747);
+    border-radius: 3px;
+}
+
+.bodyText2 {
+    color: rgb(14, 13, 13);
+    padding: 0px 10px;
+    position: absolute;
+    bottom: 90px;
+    left: 10px;
+    background: rgba(255, 254, 254, 0.747);
+    border-radius: 3px;
+}
+
+/*
+======================================================
+Font size and list adjustments 
+======================================================
+*/
+
+h3 {
+    font-size: 18px;
+    margin-bottom: -15px;
+    border-bottom: 2px solid rgba(131, 131, 131, 0.849);
+}
+
+li {
+    margin-left: -22px;
+    padding-top: 5px;
+}
+
+/*
+======================================================
+Text description and position for slide 3
+======================================================
+*/
+
+.interiorText {
+    color: rgb(14, 13, 13);
+    padding: 0px 10px;
+    position: absolute;
+    bottom: 150px;
+    left: 340px;
+    background: rgba(255, 254, 254, 0.747);
+    border-radius: 3px;
+}
+
+/*
+======================================================
+Text description and position for slide 4
+======================================================
+*/
+
+.wheelText {
+    color: rgb(14, 13, 13);
+    padding: 0px 10px;
+    position: absolute;
+    bottom: 230px;
+    left: 480px;
+    background: rgba(255, 254, 254, 0.747);
+    border-radius: 3px;
+}
+
+/*
+======================================================
+Text description and position for slide 5
+======================================================
+*/
+
+.featureText {
+    color: rgb(14, 13, 13);
+    padding: 0px 10px;
+    position: absolute;
+    bottom: 270px;
+    left: 10px;
+    background: rgba(255, 254, 254, 0.747);
+    border-radius: 3px;
+}
+
+
+
+  

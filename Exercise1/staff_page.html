@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Exercise 1: HTML & CSS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="styles.css" />
+   
+</head>
+<body>
+    <!-- Background Image -->
+    <form><div class="background-image">
+    <!-- Header of Name with tab links -->
+    <header class="fixed-top">
+
+        <img id="icon" src="cadillacIcon.png">
+
+        <div class="navbar">
+
+            <a class="home" href="staff_page.html">HOME</a>
+
+            <div class="dropdown">
+                <!--Dropdown menu for inventory (new, used, cars, trucks, suvs)-->
+                <button class="dropbtn"><a class="inventory" href="staff_page.html">INVENTORY</a>
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+
+                    <a href="#new">NEW</a>
+                    <a href="#used">USED</a>
+                    <a href="#cars">CARS</a>
+                    <a href="#trucks">TRUCKS</a>
+                    <a href="#suvs">SUV'S</a>
+
+                </div>
+            
+            </div>
+
+            <a class="about" href="staff_page.html">ABOUT US</a>
+
+            <div class="dropdown" >
+                <!-- Dropdown menu for contact (sales dept, service dept, parts dept, finance dept) -->
+                <button class="dropbtn"><a class="contact" href="staff_page.html">CONTACT</a>
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <!-- onclick functions for each dropdown menu option with open/close features and plus/minus sign -->
+                    <a onclick="openSales()">SALES DEPT</a>
+                    <a onclick="openService()">SERVICE DEPT</a>
+                    <a onclick="openParts()">PARTS DEPT</a>
+                    <a onclick="openFinance()">FINANCE DEPT</a>
+
+                </div>
+
+            </div>
+
+        </div>
+        
+    </header>
+
+    <div class="container">
+       
+        <!-- Sales Department section in a row -->
+        <div id="sales">
+
+            <div class="row">  
+                <!-- onclick function for sales section with open/close tab and plus/minus sign -->
+                <a id="salesSymbol" class="closeButton" onclick="closeSales()"> - </a><h2>Sales Department:</h2>
+
+                <div id="salesStaff">
+                
+                    <!-- First sales department staff members profile pic and personal info -->
+                    <div class="emp1">
+
+                        <div class="col-lg-3">
+                            
+                            <img id="profile" src="placeholder_1.jpg">
+
+                        </div>
+                        <div class="col-lg-9">
+
+                            <h3>Abdul</h3>
+                            <h4>Sales Director</h4>
+                            <h4>Phone: 555-5551</h4>
+
+                        </div>
+
+                    </div>
+                    <!-- Second sales department staff members profile pic and personal info -->
+                    <div class="emp2">
+
+                        <div class="col-lg-3">
+                            
+                            <img id="profile" src="placeholder_1.jpg">
+                            
+                        </div>
+                        <div class="col-lg-9">
+
+                            <h3>David</h3>
+                            <h4>Sales Associate</h4>
+                            <h4>Phone: 555-5552</h4>
+
+                        </div>
+
+                    </div>
+                
+                </div>
+
+            </div>                
+
+        </div>
+        <br>
+        <!-- Service Department section in a row -->
+        <div id="service">
+
+            <div class="row">  
+                <!-- onclick function for service section with open/close tab and plus/minus sign -->
+                <a id="serviceSymbol" class="closeButton" onclick="closeService()"> - </a><h2>Service Department:</h2>
+
+                <div id="serviceStaff">
+
+                    <!-- First service department staff members profile pic and personal info -->
+                    <div class="emp3">
+
+                        <div class="col-lg-3">
+                            
+                            <img id="profile" src="placeholder_1.jpg">
+                            
+                        </div>
+
+                        <div class="col-lg-9">
+
+                            <h3>Angie</h3>
+                            <h4>Service Director</h4>
+                            <h4>Phone: 555-5553</h4>
+
+                        </div>
+
+                    </div>
+                    <!-- Second service department staff members profile pic and personal info -->
+                    <div class="emp4">
+
+                        <div class="col-lg-3">
+                            
+                            <img id="profile" src="placeholder_1.jpg">
+                            
+                        </div>
+                        <div class="col-lg-9">
+
+                            <h3>Matt</h3>
+                            <h4>Service Advisor</h4>
+                            <h4>Phone: 555-5554</h4>
+
+                        </div>
+                    
+                    </div>
+
+                </div>
+
+            </div>                
+    
+        </div>
+        <br>
+        <!-- Parts Department section in a row -->
+        <div id="parts">
+
+            <div class="row">  
+                <!-- onclick function for parts section with open/close tab and plus/minus sign -->
+                <a id="partsSymbol" class="closeButton" onclick="closeParts()"> - </a><h2>Parts Department:</h2>
+
+                <div id="partsStaff">
+
+                    <!-- First parts department staff members profile pic and personal info -->
+                    <div class="emp5">
+
+                        <div class="col-lg-3">
+                            
+                            <img id="profile" src="placeholder_1.jpg">
+                            
+                        </div>
+                        <div class="col-lg-9">
+
+                            <h3>Chris</h3>
+                            <h4>Parts Director</h4>
+                            <h4>Phone: 555-5555</h4>
+
+                        </div>
+
+                    </div>
+                    <!-- Second parts department staff members profile pic and personal info -->
+                    <div class="emp6">
+                        
+                        <div class="col-lg-3">
+                            
+                            <img id="profile" src="placeholder_1.jpg">
+                            
+                        </div>
+                        <div class="col-lg-9">
+
+                            <h3>Sean</h3>
+                            <h4>Parts Associate</h4>
+                            <h4>Phone: 555-5556</h4>
+
+                        </div>
+                    
+                    </div>
+                    <!-- Third parts department staff members profile pic and personal info -->
+                    <div class="emp7">
+
+                        <div class="col-lg-3">
+                            
+                            <img id="profile" src="placeholder_1.jpg">
+                            
+                        </div>
+                        <div class="col-lg-9">
+
+                            <h3>Jim</h3>
+                            <h4>Parts Associate</h4>
+                            <h4>Phone: 555-5557</h4>
+
+                        </div>
+                    
+                    </div>
+
+                </div>
+
+            </div>                
+
+        </div>
+        <br>
+        <!-- Finance Department section in a row -->
+        <div id="finance">
+
+            <div class="row">  
+                <!-- onclick function for finance section with open/close tab and plus/minus sign -->
+                <a id="financeSymbol" class="closeButton" onclick="closeFinance()"> - </a><h2>Finance Department:</h2>
+
+                <div id="financeStaff">
+
+                    <!-- First Finance department staff members profile pic and personal info -->
+                    <div class="emp8">
+
+                        <div class="col-lg-3">
+                            
+                            <img id="profile" src="placeholder_1.jpg">
+                            
+                        </div>
+                        <div class="col-lg-9">
+
+                            <h3>Debbie</h3>
+                            <h4>Finance Director</h4>
+                            <h4>Phone: 555-5558</h4>
+
+                        </div>
+                    
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+        <br>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="fixed-bottom">
+
+        <div class="copyright">Copyright © 2019 Richard Sanchez, Inc. All rights reserved</div>
+            
+    </footer>
+
+    </div></form>
+
+    <script>
+
+        //====================================================
+        // Functions for open/close tabs for individual depts.
+        //==================================================== 
+
+        function closeSales() {
+
+            var x = document.getElementById("salesStaff");
+            var text = document.getElementById("salesSymbol");
+
+                if (x.style.display === "none") {
+                    x.style.display = "block";
+                    text.innerHTML = " - ";
+                } 
+                else {
+                    x.style.display = "none";
+                    text.innerHTML = " + ";
+                }
+
+        }
+
+        function closeService() {
+
+            var x = document.getElementById("serviceStaff");
+            var text = document.getElementById("serviceSymbol");
+
+                if (x.style.display === "none") {
+                    x.style.display = "block";
+                    text.innerHTML = " - ";
+                } 
+                else {
+                    x.style.display = "none";
+                    text.innerHTML = " + ";
+                }
+
+        }
+
+        function closeParts() {
+
+            var x = document.getElementById("partsStaff");
+            var text = document.getElementById("partsSymbol");
+
+                if (x.style.display === "none") {
+                    x.style.display = "block";
+                    text.innerHTML = " - ";
+                } 
+                else {
+                    x.style.display = "none";
+                    text.innerHTML = " + ";
+                }
+
+        }
+
+        function closeFinance() {
+
+            var x = document.getElementById("financeStaff");
+            var text = document.getElementById("financeSymbol");
+
+                if (x.style.display === "none") {
+                    x.style.display = "block";
+                    text.innerHTML = " - ";
+                } 
+                else {
+                    x.style.display = "none";
+                    text.innerHTML = " + ";
+                }
+
+        }
+
+        //====================================================
+        // Functions for open/close tabs for contact dropdown menu
+        //==================================================== 
+
+        function openSales() {
+
+            var a = document.getElementById("salesStaff");
+            var b = document.getElementById("serviceStaff");
+            var c = document.getElementById("partsStaff");
+            var d = document.getElementById("financeStaff");
+            var salesText = document.getElementById("salesSymbol");
+            var serviceText = document.getElementById("serviceSymbol");
+            var partsText = document.getElementById("partsSymbol");
+            var financeText = document.getElementById("financeSymbol");
+           
+                if (a.style.display === "block") {
+                    a.style.display = "block";
+                    b.style.display = "none";
+                    c.style.display = "none";
+                    d.style.display = "none";
+                    salesText.innerHTML = " - ";
+                    serviceText.innerHTML = " + ";
+                    partsText.innerHTML = " + ";
+                    financeText.innerHTML = " + ";
+                } 
+                else {
+                    a.style.display = "block";
+                    b.style.display = "none";
+                    c.style.display = "none";
+                    d.style.display = "none";
+                    salesText.innerHTML = " - ";
+                    serviceText.innerHTML = " + ";
+                    partsText.innerHTML = " + ";
+                    financeText.innerHTML = " + ";
+                }
+
+        }
+
+        function openService() {
+
+            var a = document.getElementById("salesStaff");
+            var b = document.getElementById("serviceStaff");
+            var c = document.getElementById("partsStaff");
+            var d = document.getElementById("financeStaff");
+            var salesText = document.getElementById("salesSymbol");
+            var serviceText = document.getElementById("serviceSymbol");
+            var partsText = document.getElementById("partsSymbol");
+            var financeText = document.getElementById("financeSymbol");
+
+                if (b.style.display === "block") {
+                    a.style.display = "none";
+                    b.style.display = "block";
+                    c.style.display = "none";
+                    d.style.display = "none";
+                    salesText.innerHTML = " + ";
+                    serviceText.innerHTML = " - ";
+                    partsText.innerHTML = " + ";
+                    financeText.innerHTML = " + ";
+
+                } 
+                else {
+                    a.style.display = "none";
+                    b.style.display = "block";
+                    c.style.display = "none";
+                    d.style.display = "none";
+                    salesText.innerHTML = " + ";
+                    serviceText.innerHTML = " - ";
+                    partsText.innerHTML = " + ";
+                    financeText.innerHTML = " + ";
+                }
+
+        }
+
+        function openParts() {
+
+            var a = document.getElementById("salesStaff");
+            var b = document.getElementById("serviceStaff");
+            var c = document.getElementById("partsStaff");
+            var d = document.getElementById("financeStaff");
+            var salesText = document.getElementById("salesSymbol");
+            var serviceText = document.getElementById("serviceSymbol");
+            var partsText = document.getElementById("partsSymbol");
+            var financeText = document.getElementById("financeSymbol");
+
+                if (c.style.display === "block") {
+                    a.style.display = "none";
+                    b.style.display = "none";
+                    c.style.display = "block";
+                    d.style.display = "none";
+                    salesText.innerHTML = " + ";
+                    serviceText.innerHTML = " + ";
+                    partsText.innerHTML = " - ";
+                    financeText.innerHTML = " + ";
+                } 
+                else {
+                    a.style.display = "none";
+                    b.style.display = "none";
+                    c.style.display = "block";
+                    d.style.display = "none";
+                    salesText.innerHTML = " + ";
+                    serviceText.innerHTML = " + ";
+                    partsText.innerHTML = " - ";
+                    financeText.innerHTML = " + ";
+                }
+
+        }
+
+        function openFinance() {
+
+            var a = document.getElementById("salesStaff");
+            var b = document.getElementById("serviceStaff");
+            var c = document.getElementById("partsStaff");
+            var d = document.getElementById("financeStaff");
+            var salesText = document.getElementById("salesSymbol");
+            var serviceText = document.getElementById("serviceSymbol");
+            var partsText = document.getElementById("partsSymbol");
+            var financeText = document.getElementById("financeSymbol");
+        
+                if (d.style.display === "block") {
+                    a.style.display = "none";
+                    b.style.display = "none";
+                    c.style.display = "none";
+                    d.style.display = "block";
+                    salesText.innerHTML = " + ";
+                    serviceText.innerHTML = " + ";
+                    partsText.innerHTML = " + ";
+                    financeText.innerHTML = " - ";
+                } 
+                else {
+                    a.style.display = "none";
+                    b.style.display = "none";
+                    c.style.display = "none";
+                    d.style.display = "block";
+                    salesText.innerHTML = " + ";
+                    serviceText.innerHTML = " + ";
+                    partsText.innerHTML = " + ";
+                    financeText.innerHTML = " - ";
+                }
+
+        }
+        
+
+    </script>
+    
+</body>
+</html>
